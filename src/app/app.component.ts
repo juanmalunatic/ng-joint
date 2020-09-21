@@ -6,7 +6,7 @@ import {
   AfterViewInit
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { MatAccordion, MatAccordionDisplayMode } from '@angular/material';
+import { MatAccordion, MatAccordionDisplayMode } from '@angular/material/expansion';
 
 import { AppGenericService } from './app-generic.service';
 
