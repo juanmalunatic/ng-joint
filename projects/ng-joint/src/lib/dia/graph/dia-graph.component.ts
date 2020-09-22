@@ -16,7 +16,7 @@ import { DiaGraphService } from './dia-graph.service';
 })
 export class DiaGraphComponent {
   /** Shape-plugins Component */
-  @ContentChild(ShapesComponent) shapes: ShapesComponent;
+  @ContentChild(ShapesComponent, {static: false}) shapes: ShapesComponent;
 
   constructor(
     private service: DiaGraphService

@@ -21,13 +21,13 @@ import { ShapesUmlComponent } from '../schematic-generated/uml';
 })
 export class ShapesComponent {
   /** NgJoint Standard Shapes Component Instance */
-  @ContentChild(ShapesStandardComponent) shapesStandard: ShapePlugin;
+  @ContentChild(ShapesStandardComponent, {static: false}) shapesStandard: ShapePlugin;
 
   /** NgJoint Angular Shapes Component Instance */
-  @ContentChild(ShapesAngularComponent) shapesAngular: ShapePlugin;
+  @ContentChild(ShapesAngularComponent, {static: false}) shapesAngular: ShapePlugin;
 
   /** NgJoint UML Shapes Component Instance */
-  @ContentChild(ShapesUmlComponent) shapesUml: ShapePlugin;
+  @ContentChild(ShapesUmlComponent, {static: false}) shapesUml: ShapePlugin;
 
   constructor(
     private service: ShapesService) { }

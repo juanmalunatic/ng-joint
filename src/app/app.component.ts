@@ -25,7 +25,7 @@ interface MenuOptionInterface {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  @ViewChild('accordion') accordion: MatAccordion;
+  @ViewChild('accordion',  {static: false}) accordion: MatAccordion;
 
   accordionMulti = true;
   accordionDisplayMode: MatAccordionDisplayMode = 'flat';

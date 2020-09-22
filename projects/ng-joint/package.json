@@ -2,8 +2,8 @@
   "name": "@dgwnu/ng-joint",
   "version": "0.0.1",
   "peerDependencies": {
-    "@angular/common": "^7.2.2",
-    "@angular/core": "^7.2.2",
+    "@angular/common": "~8.2.14",
+    "@angular/core": "~8.2.14",
     "jointjs": "^2.2.1",
     "node-cache":" ^4.2.0"
   }

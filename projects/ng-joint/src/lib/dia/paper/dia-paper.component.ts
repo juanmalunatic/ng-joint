@@ -29,8 +29,8 @@ import { DiaGraphComponent } from '../graph/dia-graph.component';
   encapsulation: ViewEncapsulation.None
 })
 export class DiaPaperComponent implements AfterViewInit {
-  @ViewChild('dgwnudiapaper') diaPaperElRef: ElementRef;
-  @ContentChild(DiaGraphComponent) graph: DiaGraphComponent;
+  @ViewChild('dgwnudiapaper', {static: false}) diaPaperElRef: ElementRef;
+  @ContentChild(DiaGraphComponent, {static: false}) graph: DiaGraphComponent;
 
   @Input() width?: number;
   @Input() height?: number;
